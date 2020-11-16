@@ -10,6 +10,6 @@
     </ul>
     </div>
         <div class="main w-3/4 border-solid border-2 border-black m-2">
-            <h1>請選擇管理項目</h1>
+            <div class="text-4xl text-center">請選擇管理項目</div>
         </div>
 @endsection
