@@ -4,3 +4,8 @@
     margin: 10px auto;
     overflow: auto;
 }
+
+.main {
+    min-height: 520px;
+    overflow: auto;
+}
