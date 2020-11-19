@@ -15,7 +15,7 @@
     <div class="container">
         <div class="header">
             <div id="title">
-    {{ $date }} | 今日瀏覽: {{ $today }} | 累積瀏覽: {{ $sum }}<a href="index.php" class="float-right">回首頁</a></div>
+    {{ $date }} | 今日瀏覽: {{ $today }} | 累積瀏覽: {{ $sum }}<a href="/" class="float-right">回首頁</a></div>
     <a href="/" title=""><img src="{{ asset('/img/02B01.jpg') }}" title="健康促進網" class="w-full"></a>
 </div>
 <div class="main flex">
