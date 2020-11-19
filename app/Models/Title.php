@@ -9,4 +9,8 @@ class Title extends Model
 {
     use HasFactory;
     protected $fillable=['classify_id','text','title'];
+
+    public function classify(){
+        return $this->belongto("App\Models\Classify");
+    }
 }

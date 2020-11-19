@@ -9,4 +9,8 @@ class Classify extends Model
 {
     use HasFactory;
     protected $fillable=['classify'];
+
+    public function title(){
+        return $this->hasMany("App\Models\Title");
+    }
 }
