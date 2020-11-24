@@ -11,6 +11,13 @@
     </div>
     <div class="main w-5/6 border-solid border-2 border-black m-2">
         <livewire:marquee />
-    主要內容
+        <ul class="flex ">
+        @foreach($classify as $class)
+        <li class="border mx-2"> {{$class->classify}}</li>
+        @endforeach
+    </ul>
+    <ul class="flex">
+        <li></li>
+    </ul>
     </div>
 @endsection

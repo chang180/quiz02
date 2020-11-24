@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Classify;
 
 class HomeController extends Controller
 {
@@ -14,8 +15,13 @@ class HomeController extends Controller
     public function index()
     {
         //
-        $this->view['hi']='hi';
-        return view('home',$this->view);
+        $classifies=$this->view['classify'] = Classify::all();
+        foreach ($classifies as $classify){
+            $title=$classify->title;
+            $classify->title=$title;
+        }
+        // dd($this->view);
+        return view('front.home', $this->view);
     }
 
     /**
